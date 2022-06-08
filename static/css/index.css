@@ -1,0 +1,99 @@
+body {
+    background-color: black;
+    color: white;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+header {
+    color: red;
+    font-size: 1.5em;
+    font-family: "consolas";
+}
+
+button {
+    background-color: black;
+    color: white;
+    width: 57px;
+    height: 60px;
+    border: 3px solid rgb(102, 3, 3);
+    border-radius: 5px;
+}
+
+input {
+    width: 370px;
+    height: 50px;
+    background-color: black;
+    color: white;
+    border: 3px solid rgb(102, 3, 3);
+    border-radius: 5px;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+.parent {
+    height: 3em; /* 애니메이션 높이 */
+    overflow-y: hidden;
+    display: block;
+}
+.parent .child {
+    font-size: 3em;/* 애니메이션 높이 */
+    font-weight: bold;
+    line-height: 1;
+    animation-name: grow;
+    animation-duration: 1s;/* 애니메이션 시간 */
+}
+/* 키프레임 애니메이션 */
+@keyframes grow {
+    from { transform: translateY(3em) }/* 애니메이션 높이 */
+    to { transform: translateY(0) }
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+/* 메인 영역 */
+#main {
+    margin-top: 100px;
+    background-color: rgb(22, 22, 22);
+    width: 460px;
+    height: 800px;
+}
+
+/* 채팅 영역 */
+#chat {
+    height: 90%;
+    width: 100%;
+    overflow-y: auto;
+  }
+  
+/* 접속 알림 */
+.connect {
+    color: rgb(24, 180, 24);
+    font-weight: bold;
+    margin-left: 20px;
+  }
+  
+  /* 접속 종료 알림 */
+  .disconnect {
+    color: rgb(110, 34, 34);
+    font-weight: bold;
+    margin-left: 20px;
+  }
+  
+  /* 내가 보낸 메시지 */
+  .me {
+    margin-top: 10px;
+    margin-right: 20px;
+    color: yellow;
+    font-weight: bold;
+    text-align: right;
+  }
+  
+  /* 상대방이 보낸 메시지 */
+  .other {
+    margin-top: 10px;
+    margin-left: 20px;
+  }
+  
+  .button {
+    text-align: center;
+  }
