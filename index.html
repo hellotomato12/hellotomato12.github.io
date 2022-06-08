@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Hellotomato</title>
+        <link rel="stylesheet" href="css/index.css">
+        <script src="/socket.io/socket.io.js"></script>
+        <script src="js/index.js"></script>
+    </head>
+    <body>
+        <br>
+        <header class="parent"><div class="child">hellotomato</header></div>
+        <hr style="border-color: red;"><br><br><br>
+        <p>현재 테스트 중</p>
+        <div id="main">
+            <div id="chat">
+                <br>
+                <!-- 채팅 메시지 영역-->
+            </div>
+            <div>
+                <div class="button">
+                    <input type="text" id="test" placeholder="메시지를 입력해주세요">
+                    <button onclick="send()">전송</button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
